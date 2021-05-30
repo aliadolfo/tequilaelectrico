@@ -1,0 +1,29 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+  <head>
+    <title>TequilaElectrico</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <script src="{% static 'js/base.js' %}" rel="text/javascrip"></script>
+
+
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="logo">TequilaElectrico</h1>
+        <nav class="nav">
+          <a href="/about">About</a>
+          <a href=#>Services</a>
+          <a href=#>Contact</a>
+        </nav>
+      </div>
+    </header>
+    {% block content %}
+
+    {% endblock content %}
+  </body>
+</html>
