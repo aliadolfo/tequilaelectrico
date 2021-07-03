@@ -1,25 +1,29 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.item { 
+  width: 25%; /* For 4 tiles per row */
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 3;
+  }
 
 .header {
-  width: 100%;
-  position:relative;
-  z-index:100;
-  background: #4ca1af;
-  background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+  display: flex;
+  background: rgb(25, 105, 68);
+  color: white;
+  border-radius: 3px;
+  padding: 1em;
+  font-family: sans-serif;
 }
 
-.logo {
-  text-align: left;
-  color: white;
-  margin: 0;
-}
-.nav {
-  text-align: right;
-  margin: 0;
-  display: inline-block;
-  text-align: right
+a {
+  margin-right: 1em;
 }
